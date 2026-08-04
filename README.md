@@ -1,13 +1,19 @@
-# mcp-opendata-canada
+# @pipeworx/opendata-canada
 
-open.canada.ca MCP — Canada CKAN catalogue.
+[open.canada.ca](https://open.canada.ca) MCP — Canada's national open-data catalogue (CKAN). Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
+- `search(query, fq?, rows?, start?)` — CKAN package_search
+- `package(id)` — single dataset by id or slug
+- `organizations(limit?)` — publishers
+- `groups(limit?)` — themes/groups
+
+## Data source
+
+`https://open.canada.ca/data/api/3/`
 
 ## Quick Start
 
@@ -23,7 +29,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +53,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
