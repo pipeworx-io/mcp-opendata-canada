@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/opendata-canada",
   "title": "Opendata Canada",
-  "description": "open.canada.ca — Canada national open-data catalogue (CKAN)",
-  "version": "0.1.0",
+  "description": "open.canada.ca MCP — Canada CKAN catalogue.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/opendata-canada",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-opendata-canada",
