@@ -1,0 +1,65 @@
+[
+  {
+    "name": "search",
+    "description": "Full-text search the open.canada.ca CKAN catalogue by keyword query, with optional CKAN filter query (fq), pagination (rows/start); returns dataset titles, descriptions, organizations, formats, and resource URLs.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "fq": {
+          "type": "string"
+        },
+        "rows": {
+          "type": "number"
+        },
+        "start": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "package",
+    "description": "Dataset by id/slug.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "organizations",
+    "description": "List all Government of Canada organizations that publish datasets on open.canada.ca, returning name, title, description, and dataset count for each (up to optional limit, default 100).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  {
+    "name": "groups",
+    "description": "List the subject-area themes used across open.canada.ca (e.g. Nature And Environment, Science And Technology, Health And Safety), ranked by dataset count. Each theme includes an fq filter string to pass to the search tool to list that theme's datasets. Use this to browse what Canada publishes by topic before searching.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "number"
+        }
+      }
+    }
+  }
+]
